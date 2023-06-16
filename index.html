@@ -32,13 +32,9 @@
             flex-direction: column;
         }
         .info img {
-            width: 300px;
-            height: 250px;
+            width: 280px;
+            height: 550px;
             border-radius: 2px;
-        }
-        .info img:nth-child(2) {
-            width: 300px;
-            height: 310px;
             border-bottom: 1px solid blue;
         }
         p {
@@ -68,6 +64,35 @@
         ul {
             margin-bottom: 100px;
         }
+
+        @media (max-width: 768px) {
+            .info {
+                position: static;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .info img {
+                width: 80%;
+                height: 80%;
+                border-radius: 2px;
+                }
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .albumes {
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            h2 {
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -77,13 +102,11 @@
 
     <main>
         <aside class="info">
-            <img src="miranda.jpg" alt="">
-
-            <img src="info.png" alt="">
+            <img src="fotoinfo.png" alt="">
         </aside>
 
-        <div class="contendor">
-            <h2>Biografía:</h2>
+        <h2>Biografía:</h2>
+        <div class="contenedor">
             <p>
                 Miranda! es un dúo musical argentino de pop liderado por los cantantes Alejandro Sergi y Juliana Gattas. Fue formado a mediados de 20011​ y su nombre es un homenaje al actor argentino Osvaldo Miranda. Durante su trayectoria han editado ocho álbumes de estudio y seis álbumes en vivo.
             </p>
@@ -139,8 +162,8 @@
 
         </div>
 
+        
         <h2>Mis videos favoritos:</h2>
-
         <div class="videos">
             <a href="https://www.youtube.com/watch?v=a3hOeU7w59o" target="_blank" rel="noopener noreferrer"><img src="perfecta1.png" alt="video perfecta original"></a>
 
